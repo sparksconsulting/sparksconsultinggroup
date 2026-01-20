@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sparks Consulting Group</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Sparks Consulting Group</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section>
+    <h2>Unlock Your Business’s Potential</h2>
+    <p>We help small businesses increase profitability through data-driven insights and strategic guidance.</p>
+    <a href="contact.html"><button class="cta">Get Started</button></a>
+</section>
+
+<section>
+    <h2>What We Offer</h2>
+    <ul>
+        <li>Analytics & Data Insights</li>
+        <li>Strategic Business Consulting</li>
+        <li>Process Improvement</li>
+    </ul>
+</section>
+
+<footer>
+    <p>&copy; 2026 Sparks Consulting Group</p>
+</footer>
+
+</body>
+</html>
