@@ -1,22 +1,21 @@
-/* style.css */
+/* General Styles */
 body {
     font-family: 'Helvetica', sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    color: #333;
-    background-color: #fdfdfd;
+    color: #FFD700; /* Gold text */
+    background-color: #000000; /* Black background */
 }
 
 header {
-    background-color: #1E40AF; /* deep blue */
-    color: white;
-    padding: 20px 0;
     text-align: center;
+    padding: 20px 0;
+    background-color: #000000;
 }
 
 nav a {
-    color: white;
+    color: #FFD700;
     margin: 0 15px;
     text-decoration: none;
     font-weight: bold;
@@ -26,33 +25,60 @@ nav a:hover {
     text-decoration: underline;
 }
 
-section {
+/* Home page logo */
+.home-logo {
+    display: block;
+    margin: 0 auto 20px;
+    max-height: 150px;
+}
+
+/* Other page logos */
+.header-logo {
+    display: block;
+    margin: 0 auto 10px;
+    max-height: 80px;
+}
+
+/* Hero section */
+.hero {
+    text-align: center;
     padding: 60px 20px;
-    max-width: 1000px;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+/* About section */
+.about {
+    padding: 40px 20px;
+    max-width: 800px;
     margin: auto;
 }
 
-h1, h2 {
-    color: #1E40AF;
+.about h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
 }
 
-button.cta {
-    background-color: #F59E0B; /* accent orange */
-    border: none;
-    padding: 12px 25px;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-    border-radius: 5px;
+.about h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
 }
 
-button.cta:hover {
-    background-color: #D97706;
+section ul {
+    list-style-type: disc;
+    padding-left: 40px;
 }
 
 footer {
-    background-color: #1E40AF;
-    color: white;
     text-align: center;
     padding: 20px;
+    background-color: #111111;
+    color: #FFD700;
 }
