@@ -3,13 +3,19 @@ body {
     font-family: 'Lato', sans-serif;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
-    color: #000000;       /* Black text */
-    background-color: #FFFFFF; /* White background */
+    line-height: 1.8;
+    color: #000000;
+    background-color: #FFFFFF;
+    font-size: 16px;
 }
 
 h2 {
     font-size: 1em;
+    margin: 0;
+}
+
+h1 {
+    margin: 0;
 }
 
 h2.brand-name {
@@ -19,76 +25,87 @@ h2.brand-name {
 /* ------------------ Header & Navigation ------------------ */
 header {
     text-align: center;
-    padding: 20px 0;
-    background-color: #FFFFFF; /* white header */
+    padding: 10px 0;
+    background-color: #000000;
 }
 
 .brand-name,
 header h2.brand-name {
     margin: 0 !important;
-    padding: 10px 20px !important;
-    color: #C5B358 !important; /* Las Vegas Gold */
+    padding: 5px 15px !important;
+    color: #C5B358 !important;
+    font-family: 'Montserrat', sans-serif !important;
     font-size: 36px !important;
     font-weight: 700 !important;
     line-height: 1.2 !important;
     letter-spacing: 0 !important;
-    -webkit-text-stroke: 1px #000000 !important;
     display: inline-block !important;
 }
 
 nav a {
-    color: #C5B358;          /* Las Vegas Gold links */
+    color: #C5B358;
     margin: 0 15px;
     text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     transition: color 0.3s;
 }
 
 nav a:hover {
-    color: #FFD700;          /* Brighter gold on hover */
+    color: #FFD700;
 }
 
 /* ------------------ Logo ------------------ */
+.logo-text {
+    margin: 0 !important;
+    padding: 0 !important;
+    color: #C5B358 !important;
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 56px !important;
+    font-weight: 700 !important;
+    line-height: 1 !important;
+}
+
 .logo {
     display: block;
-    margin: 0 auto 20px; /* centers the logo */
-    max-height: 100px;
+    margin: 0 auto 0px;
+    max-height: 200px;
 }
 
 /* ------------------ Hero Section ------------------ */
 .hero {
     text-align: center;
     padding: 60px 20px;
-    background-color: #f7f7f7; /* light gray background for hero */
+    background-color: #f7f7f7;
 }
 
 .hero h1 {
     font-size: 2.5em;
     margin-bottom: 20px;
-    color: #C5B358; /* Gold heading */
+    color: #C5B358;
 }
 
 .hero p {
     font-size: 1.2em;
-    color: #000000; /* Black text */
+    color: #000000;
 }
 
 /* ------------------ Buttons / CTA ------------------ */
 a.cta {
-    background-color: #C5B358; /* Las Vegas Gold */
-    color: #FFFFFF;            /* White text */
-    padding: 12px 25px;        /* Button padding */
+    background-color: #C5B358;
+    color: #FFFFFF;
+    padding: 12px 25px;
     font-size: 1em;
     font-weight: bold;
-    text-decoration: none;     /* Remove underline */
-    display: inline-block;     /* Button-like behavior */
-    border-radius: 5px;        /* Rounded corners */
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
     transition: background 0.3s;
     margin-top: 20px;
 }
 
 a.cta:hover {
-    background-color: #FFD700; /* Brighter gold on hover */
+    background-color: #FFD700;
     cursor: pointer;
 }
 
@@ -97,13 +114,13 @@ a.cta:hover {
     padding: 40px 20px;
     max-width: 800px;
     margin: auto;
-    background-color: #FFFFFF; /* white background */
+    background-color: #FFFFFF;
 }
 
 .about h2:not(.brand-name) {
     font-size: 2em;
     margin-bottom: 10px;
-    color: #C5B358; /* Gold heading */
+    color: #C5B358;
 }
 
 .about h3 {
@@ -114,6 +131,13 @@ a.cta:hover {
 
 .about p {
     color: #000000;
+    text-align: left;
+    line-height: 1.8;
+}
+
+.about ul {
+    text-align: left;
+    line-height: 1.8;
 }
 
 /* ------------------ Services Section ------------------ */
@@ -121,19 +145,50 @@ a.cta:hover {
     padding: 40px 20px;
     max-width: 800px;
     margin: auto;
-    background-color: #f7f7f7; /* light gray for contrast */
+    background-color: #FFFFFF;
 }
 
 .services h2:not(.brand-name) {
     font-size: 2em;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     color: #C5B358;
+    margin-top: 0;
 }
 
 .services ul {
     color: #000000;
     list-style-type: disc;
     padding-left: 40px;
+    line-height: 1.8;
+}
+
+.services li {
+    margin-bottom: 12px;
+}
+
+/* Services with light background */
+.services-highlight {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: auto;
+    background-color: #f7f7f7;
+}
+
+.services-highlight h2:not(.brand-name) {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #C5B358;
+}
+
+.services-highlight ul {
+    color: #000000;
+    list-style-type: disc;
+    padding-left: 40px;
+    line-height: 1.8;
+}
+
+.services-highlight li {
+    margin-bottom: 12px;
 }
 
 /* ------------------ Contact Section ------------------ */
@@ -159,10 +214,176 @@ a.cta:hover {
     text-decoration: underline;
 }
 
+/* Contact Info Section */
+.contact-info {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: auto;
+    background-color: #FFFFFF;
+    text-align: center;
+}
+
+.contact-info h2:not(.brand-name) {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #C5B358;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.contact-item {
+    text-align: center;
+}
+
+.contact-item p {
+    color: #000000;
+    line-height: 1.8;
+}
+
+.contact-item a {
+    color: #C5B358;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
+    color: #FFD700;
+}
+
+.support-note {
+    font-size: 0.95em;
+    color: #666666;
+    margin-top: 10px;
+}
+
+/* Contact Form Section */
+.contact-form-section {
+    padding: 40px 20px;
+    max-width: 600px;
+    margin: auto;
+    background-color: #FFFFFF;
+}
+
+.contact-form-section h2:not(.brand-name) {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #C5B358;
+    text-align: center;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 8px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 12px;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    font-family: 'Lato', sans-serif;
+    font-size: 1em;
+    color: #000000;
+    background-color: #FAFAFA;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #C5B358;
+    background-color: #FFFFFF;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #999999;
+}
+
+.submit-btn {
+    background-color: #C5B358;
+    color: #FFFFFF;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    font-family: 'Montserrat', sans-serif;
+    align-self: center;
+}
+
+.submit-btn:hover {
+    background-color: #FFD700;
+    box-shadow: 0 4px 8px rgba(197, 179, 88, 0.3);
+}
+
+.submit-btn:active {
+    background-color: #D4AF37;
+}
+
+/* CTA Section */
+.cta-section {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: auto;
+    background-color: #FFFFFF;
+    text-align: center;
+}
+
+.cta-section p {
+    font-size: 1.1em;
+    color: #000000;
+    margin-bottom: 25px;
+    line-height: 1.8;
+}
+
 /* ------------------ Footer ------------------ */
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #f7f7f7; /* light gray footer */
-    color: #C5B358;             /* gold text */
+    background-color: #f7f7f7;
+    color: #C5B358;
+    font-weight: normal;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .contact-details {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .contact-form-section {
+        max-width: 90%;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .contact-info h2:not(.brand-name) {
+        font-size: 1.5em;
+    }
 }
