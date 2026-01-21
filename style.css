@@ -28,16 +28,10 @@ nav a:hover {
 }
 
 /* ------------------ Logo ------------------ */
-.home-logo {
+.logo {
     display: block;
     margin: 0 auto 20px; /* centers the logo */
-    max-height: 150px;
-}
-
-.header-logo {
-    display: block;
-    margin: 0 auto 10px;
-    max-height: 80px;
+    max-height: 100px;
 }
 
 /* ------------------ Hero Section ------------------ */
