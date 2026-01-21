@@ -4,18 +4,19 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    color: #FFD700; /* Gold text */
-    background-color: #000000; /* Black background */
+    color: #FFFFFF; /* White text */
+    background-color: #000000; /* Default black background */
 }
 
+/* Header and navigation */
 header {
     text-align: center;
     padding: 20px 0;
-    background-color: #000000;
+    background-color: #000000; /* black header */
 }
 
 nav a {
-    color: #FFD700;
+    color: #C5B358; /* Las Vegas Gold links */
     margin: 0 15px;
     text-decoration: none;
     font-weight: bold;
@@ -23,6 +24,7 @@ nav a {
 
 nav a:hover {
     text-decoration: underline;
+    color: #FFD700; /* optional brighter hover gold */
 }
 
 /* Home page logo */
@@ -43,15 +45,18 @@ nav a:hover {
 .hero {
     text-align: center;
     padding: 60px 20px;
+    background-color: #000000; /* black hero background */
 }
 
 .hero h1 {
     font-size: 2.5em;
     margin-bottom: 20px;
+    color: #C5B358; /* gold header */
 }
 
 .hero p {
     font-size: 1.2em;
+    color: #FFFFFF;
 }
 
 /* About section */
@@ -59,26 +64,50 @@ nav a:hover {
     padding: 40px 20px;
     max-width: 800px;
     margin: auto;
+    background-color: #111111; /* slightly lighter black */
 }
 
 .about h2 {
     font-size: 2em;
     margin-bottom: 10px;
+    color: #C5B358; /* gold header */
 }
 
 .about h3 {
     font-size: 1.5em;
     margin-bottom: 10px;
+    color: #FFFFFF;
+}
+
+.about p {
+    color: #FFFFFF;
 }
 
 section ul {
     list-style-type: disc;
     padding-left: 40px;
+    color: #FFFFFF;
 }
 
+/* Call-to-action buttons */
+button.cta {
+    background-color: #C5B358; /* gold button */
+    border: none;
+    padding: 12px 25px;
+    color: #000000; /* black text on gold */
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button.cta:hover {
+    background-color: #FFD700; /* brighter gold hover */
+}
+
+/* Footer */
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #111111;
-    color: #FFD700;
+    background-color: #000000; /* black footer */
+    color: #C5B358; /* gold footer text */
 }
