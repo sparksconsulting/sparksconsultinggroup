@@ -1,14 +1,14 @@
-/* General Styles */
+/* ------------------ General Styles ------------------ */
 body {
     font-family: 'Helvetica', sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    color: #000000; /* Black text */
+    color: #000000;       /* Black text */
     background-color: #FFFFFF; /* White background */
 }
 
-/* Header and navigation */
+/* ------------------ Header & Navigation ------------------ */
 header {
     text-align: center;
     padding: 20px 0;
@@ -16,32 +16,31 @@ header {
 }
 
 nav a {
-    color: #C5B358; /* Las Vegas Gold links */
+    color: #C5B358;          /* Las Vegas Gold links */
     margin: 0 15px;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s;
 }
 
 nav a:hover {
-    text-decoration: underline;
-    color: #FFD700; /* brighter gold on hover */
+    color: #FFD700;          /* Brighter gold on hover */
 }
 
-/* Home page logo */
+/* ------------------ Logo ------------------ */
 .home-logo {
     display: block;
-    margin: 0 auto 20px;
+    margin: 0 auto 20px; /* centers the logo */
     max-height: 150px;
 }
 
-/* Other page logos */
 .header-logo {
     display: block;
     margin: 0 auto 10px;
     max-height: 80px;
 }
 
-/* Hero section */
+/* ------------------ Hero Section ------------------ */
 .hero {
     text-align: center;
     padding: 60px 20px;
@@ -51,7 +50,7 @@ nav a:hover {
 .hero h1 {
     font-size: 2.5em;
     margin-bottom: 20px;
-    color: #C5B358; /* Gold header */
+    color: #C5B358; /* Gold heading */
 }
 
 .hero p {
@@ -59,7 +58,25 @@ nav a:hover {
     color: #000000; /* Black text */
 }
 
-/* About section */
+/* ------------------ Buttons / CTA ------------------ */
+a.cta {
+    background-color: #C5B358; /* Las Vegas Gold */
+    color: #FFFFFF;            /* White text */
+    padding: 12px 25px;        /* Button padding */
+    font-weight: bold;
+    text-decoration: none;     /* Remove underline */
+    display: inline-block;     /* Button-like behavior */
+    border-radius: 5px;        /* Rounded corners */
+    transition: background 0.3s;
+    margin-top: 20px;
+}
+
+a.cta:hover {
+    background-color: #FFD700; /* Brighter gold on hover */
+    cursor: pointer;
+}
+
+/* ------------------ About Section ------------------ */
 .about {
     padding: 40px 20px;
     max-width: 800px;
@@ -83,12 +100,12 @@ nav a:hover {
     color: #000000;
 }
 
-/* Services section */
+/* ------------------ Services Section ------------------ */
 .services {
     padding: 40px 20px;
     max-width: 800px;
     margin: auto;
-    background-color: #f7f7f7; /* light gray background for contrast */
+    background-color: #f7f7f7; /* light gray for contrast */
 }
 
 .services h2 {
@@ -101,7 +118,7 @@ nav a:hover {
     padding-left: 40px;
 }
 
-/* Contact section */
+/* ------------------ Contact Section ------------------ */
 .contact {
     padding: 40px 20px;
     max-width: 800px;
@@ -122,25 +139,10 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* Call-to-action buttons */
-button.cta {
-    background-color: #C5B358; /* Gold button */
-    border: none;
-    padding: 12px 25px;
-    color: #FFFFFF; /* White text on gold */
-    font-weight: bold;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-button.cta:hover {
-    background-color: #FFD700; /* Brighter gold hover */
-}
-
-/* Footer */
+/* ------------------ Footer ------------------ */
 footer {
     text-align: center;
     padding: 20px;
     background-color: #f7f7f7; /* light gray footer */
-    color: #C5B358; /* gold text */
+    color: #C5B358;             /* gold text */
 }
