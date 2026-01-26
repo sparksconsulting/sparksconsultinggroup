@@ -154,8 +154,7 @@ nav a:hover {
 
 .value-icon {
     color: #4A90E2;
-    font-size: 1.5em;
-    font-weight: bold;
+    font-size: 1.8em;
     flex-shrink: 0;
     margin-top: 2px;
 }
@@ -163,6 +162,30 @@ nav a:hover {
 .value-item p {
     margin: 0;
     line-height: 1.6;
+}
+
+.dashboard-placeholder {
+    margin-top: 40px;
+}
+
+.dashboard-visual {
+    background: linear-gradient(135deg, #e8f0ff 0%, #f0f4f9 100%);
+    border: 2px solid #4A90E2;
+    border-radius: 10px;
+    padding: 60px 20px;
+    text-align: center;
+    min-height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+}
+
+.form-note {
+    text-align: center;
+    font-size: 0.85em;
+    color: #999;
+    margin-top: 15px;
 }
 
 .hero-right {
@@ -500,6 +523,28 @@ nav a:hover {
     box-shadow: 0 8px 25px rgba(74, 144, 226, 0.15);
 }
 
+.testimonial-metric {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.metric-number {
+    font-size: 2em;
+    font-weight: 800;
+    color: #4A90E2;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.metric-label {
+    font-size: 0.9em;
+    color: #666;
+    font-weight: 600;
+}
+
 .testimonial-text {
     color: #444;
     font-size: 1.05em;
@@ -512,10 +557,6 @@ nav a:hover {
     color: #1a1a1a;
     font-weight: 600;
     margin-bottom: 10px;
-}
-
-.testimonial-author br + br {
-    content: '';
 }
 
 .testimonial-rating {
@@ -546,19 +587,144 @@ nav a:hover {
 /* ==================== FOOTER ==================== */
 footer {
     text-align: center;
-    padding: 40px 20px;
+    padding: 0;
     background-color: #1a1a1a;
     color: #999;
     border-top: 3px solid #4A90E2;
 }
 
-footer p {
-    margin: 0;
-    line-height: 1.8;
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px 30px;
 }
 
-/* ==================== SERVICES PAGE ADDITIONS ==================== */
-.expectations-list {
+.footer-section h4 {
+    color: #ffffff;
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+
+.footer-section p {
+    color: #aaa;
+    margin-bottom: 15px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    color: #4A90E2;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: #FFD700;
+    text-decoration: underline;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.social-links a {
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: #333;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+
+.social-links a:hover {
+    background-color: #4A90E2;
+    color: white;
+}
+
+.footer-bottom {
+    border-top: 1px solid #333;
+    padding: 20px;
+    color: #666;
+    font-size: 0.9em;
+}
+
+/* ==================== SERVICE SOLUTIONS ==================== */
+.service-solutions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.solution-card {
+    padding: 30px;
+    background: white;
+    border: 2px solid #f0f0f0;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.solution-card:hover {
+    border-color: #4A90E2;
+    box-shadow: 0 8px 25px rgba(74, 144, 226, 0.15);
+    transform: translateY(-5px);
+}
+
+.solution-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.solution-icon {
+    font-size: 2.5em;
+    flex-shrink: 0;
+}
+
+.solution-header h3 {
+    margin: 0;
+    color: #1a1a1a;
+    font-size: 1.3em;
+}
+
+.solution-body {
+    flex: 1;
+    margin-bottom: 20px;
+}
+
+.solution-body p {
+    margin-bottom: 12px;
+    color: #555;
+    font-size: 0.95em;
+    line-height: 1.6;
+}
+
+.solution-body p strong {
+    color: #1a1a1a;
+    font-weight: 600;
+}
+
+.btn-small {
+    padding: 10px 20px;
+    font-size: 0.9em;
+    width: 100%;
+    text-align: center;
+}
     display: flex;
     flex-direction: column;
     gap: 25px;
@@ -684,7 +850,60 @@ footer p {
 .contact-form-section textarea {
     resize: vertical;
 }
+/* ==================== AUDIT FORM SECTION ==================== */
+.audit-form-section {
+    padding: 80px 20px;
+    background-color: #f8f9fb;
+    text-align: center;
+}
 
+.audit-form-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.audit-form-section h2 {
+    color: #4A90E2;
+    margin-bottom: 10px;
+}
+
+.audit-form-section > p {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.audit-form-control {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.audit-form-control input,
+.audit-form-control textarea {
+    padding: 12px 16px;
+    border: 2px solid #e0e0e0;
+    border-radius: 6px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.audit-form-control input:focus,
+.audit-form-control textarea:focus {
+    outline: none;
+    border-color: #4A90E2;
+    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.1);
+}
+
+.audit-form-control textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.audit-form-control button {
+    margin-top: 10px;
+}
 /* ==================== RESPONSIVE DESIGN ==================== */
 @media (max-width: 768px) {
     h1 {
