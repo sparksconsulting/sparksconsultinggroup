@@ -1,0 +1,216 @@
+<!-- BLOG POST TEMPLATE -->
+<!-- 
+How to create a new blog post:
+
+1. Copy this file and save it with a descriptive filename (e.g., your-blog-title.html)
+2. Update the metadata sections (title, description, canonical, dates, author)
+3. Write your content in the blog-post-content div
+4. Update the breadcrumb navigation
+5. Add the post to the blog listing (blog/index.html)
+
+Tips:
+- Keep posts between 800-1500 words for best engagement
+- Use h2 for main sections and h3 for subsections
+- Include a clear CTA at the end
+- Add the post title to blog/index.html in the blog-grid section
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="[CHANGE THIS: 155-160 character description of your blog post for search results]">
+    <meta name="keywords" content="[CHANGE THIS: relevant keywords separated by commas]">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://sparksconsultinggroup.com/blog/[CHANGE THIS: your-blog-url]">
+    
+    <title>[CHANGE THIS: Your Blog Title | Sparks Consulting Group Blog]</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "[CHANGE THIS: Your Blog Title]",
+      "datePublished": "[CHANGE THIS: YYYY-MM-DD]",
+      "author": {
+        "@type": "Person",
+        "name": "Dyllan Sparks"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Sparks Consulting Group"
+      }
+    }
+    </script>
+</head>
+<body>
+
+<header>
+    <h1 class="logo-text">SCG</h1>
+    <h2 class="brand-name">Sparks Consulting Group</h2>
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="../services.html">Services</a>
+        <a href="index.html">Blog</a>
+        <a href="../about.html">About</a>
+        <a href="../contact.html">Contact</a>
+    </nav>
+</header>
+
+<!-- BREADCRUMBS -->
+<div class="breadcrumbs">
+    <a href="../index.html">Home</a><span>/</span>
+    <a href="index.html">Blog</a><span>/</span>
+    <span>[CHANGE THIS: Your Blog Title]</span>
+</div>
+
+<!-- BLOG POST -->
+<article class="blog-post-container">
+    <div class="blog-post-content">
+        <h1>[CHANGE THIS: Your Blog Title]</h1>
+        <div class="blog-post-meta">
+            <span class="blog-post-date">[CHANGE THIS: Month Day, Year]</span>
+            <span class="blog-post-author">By Dyllan Sparks</span>
+        </div>
+
+        <p>[CHANGE THIS: Opening paragraph that hooks the reader and summarizes what they'll learn]</p>
+
+        <h2>[CHANGE THIS: Main Section Title]</h2>
+        <p>[CHANGE THIS: Write your first section content here]</p>
+
+        <h2>[CHANGE THIS: Second Section Title]</h2>
+        <p>[CHANGE THIS: Write your second section here]</p>
+
+        <h3>[CHANGE THIS: Subsection Title (optional)]</h3>
+        <p>[CHANGE THIS: Subsection content]</p>
+
+        <h2>[CHANGE THIS: Conclusion or Final Thoughts]</h2>
+        <p>[CHANGE THIS: Wrap up your post and lead into the CTA]</p>
+
+        <div class="blog-post-cta">
+            <a href="https://outlook.office.com/book/SparksConsultingGroup1@sparksconsultinggroup.com/s/GvJEb_Pv7kWAW0Gu-fB-uA2?ismsaljsauthenabled" class="btn-primary btn-large">Schedule Your Free Audit</a>
+        </div>
+
+        <hr style="margin: 60px 0; border: none; border-top: 2px solid #e0e0e0;">
+
+        <h3>About the Author</h3>
+        <p>Dyllan Sparks helps small business owners translate their data into confident, informed decisions. With expertise in data analytics and business strategy, he brings both technical skill and real-world business understanding to every project.</p>
+    </div>
+</article>
+
+<!-- RELATED POSTS - UPDATE WITH YOUR RELATED BLOG POSTS -->
+<section class="what-we-do">
+    <div style="max-width: 1200px; margin: 0 auto;">
+        <h2>Related Articles</h2>
+        <div class="blog-grid">
+            <article class="blog-card">
+                <div class="blog-card-image" style="background: linear-gradient(135deg, #f0f4f9 0%, #e8f0ff 100%);"></div>
+                <div class="blog-card-content">
+                    <div class="blog-card-date">January 20, 2026</div>
+                    <h3 class="blog-card-title">5 Signs Your Business Data Needs Help</h3>
+                    <p class="blog-card-excerpt">Discover the red flags that signal it's time to get your data under control.</p>
+                    <a href="5-signs-data-needs-help.html" class="blog-card-link">Read More →</a>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-card-image" style="background: linear-gradient(135deg, #e8f0ff 0%, #f8f9fb 100%);"></div>
+                <div class="blog-card-content">
+                    <div class="blog-card-date">January 10, 2026</div>
+                    <h3 class="blog-card-title">The Hidden Revenue in Your Spreadsheets</h3>
+                    <p class="blog-card-excerpt">Uncover hidden revenue opportunities in your existing data.</p>
+                    <a href="hidden-revenue.html" class="blog-card-link">Read More →</a>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-card-image" style="background: linear-gradient(135deg, #357abd 0%, #4A90E2 100%);"></div>
+                <div class="blog-card-content">
+                    <div class="blog-card-date">January 5, 2026</div>
+                    <h3 class="blog-card-title">Data Organization 101: Start Small, Think Big</h3>
+                    <p class="blog-card-excerpt">Learn how small steps in data organization compound into big insights.</p>
+                    <a href="data-organization-101.html" class="blog-card-link">Read More →</a>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h4>Sparks Consulting Group</h4>
+            <p>Data analytics and consulting for small business owners.</p>
+            <p><em>Serving the Cedar Valley</em></p>
+        </div>
+        <div class="footer-section">
+            <h4>Services</h4>
+            <ul><li><a href="../services.html">Our Services</a></li><li><a href="index.html">Blog</a></li></ul>
+        </div>
+        <div class="footer-section">
+            <h4>Company</h4>
+            <ul><li><a href="../about.html">About Us</a></li><li><a href="../index.html">Home</a></li></ul>
+        </div>
+        <div class="footer-section">
+            <h4>Contact</h4>
+            <p><strong>Email:</strong> <a href="mailto:hello@sparksconsultinggroup.com">hello@sparksconsultinggroup.com</a></p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 Sparks Consulting Group. All rights reserved.</p>
+    </div>
+</footer>
+
+<style>
+.blog-post-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+.blog-post-content h1 {
+    color: #1a1a1a;
+    margin-bottom: 20px;
+}
+.blog-post-content h2 {
+    color: #4A90E2;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+.blog-post-content h3 {
+    color: #4A90E2;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+.blog-post-meta {
+    color: #999;
+    font-size: 0.95em;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 20px;
+}
+.blog-post-date::after,
+.blog-post-author::before {
+    content: " • ";
+    margin: 0 10px;
+}
+.blog-post-content p {
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+.blog-post-cta {
+    text-align: center;
+    padding: 40px;
+    background: #f8f9fb;
+    border-radius: 10px;
+    margin: 40px 0;
+}
+</style>
+
+</body>
+</html>
