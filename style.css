@@ -37,9 +37,9 @@ h1 {
 
 h2 {
     font-size: 2em;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     color: #4A90E2;
-}
+}}
 
 h3 {
     font-size: 1.5em;
@@ -296,7 +296,7 @@ nav a:hover {
 
 /* ==================== WHAT WE DO SECTION ==================== */
 .what-we-do {
-    padding: 80px 20px;
+    padding: 100px 20px;
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
@@ -305,8 +305,8 @@ nav a:hover {
 .service-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 40px;
-    margin-top: 50px;
+    gap: 50px;
+    margin-top: 60px;
 }
 
 .service-card {
@@ -340,7 +340,7 @@ nav a:hover {
 
 /* ==================== PROBLEMS SOLVED ==================== */
 .problems-solved {
-    padding: 80px 20px;
+    padding: 100px 20px;
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
@@ -392,7 +392,7 @@ nav a:hover {
 
 /* ==================== HOW WE HELP ==================== */
 .how-we-help {
-    padding: 80px 20px;
+    padding: 100px 20px;
     background-color: #f8f9fb;
     max-width: 1200px;
     margin: 0 auto;
@@ -402,8 +402,8 @@ nav a:hover {
 .process-timeline {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 30px;
-    margin-top: 50px;
+    gap: 40px;
+    margin-top: 60px;
 }
 
 .process-step {
@@ -441,7 +441,7 @@ nav a:hover {
 
 /* ==================== FOUNDER SECTION ==================== */
 .founder-section {
-    padding: 80px 20px;
+    padding: 100px 20px;
     max-width: 1000px;
     margin: 0 auto;
 }
@@ -566,7 +566,7 @@ nav a:hover {
 
 /* ==================== FINAL CTA ==================== */
 .final-cta {
-    padding: 80px 20px;
+    padding: 100px 20px;
     max-width: 1000px;
     margin: 0 auto;
     text-align: center;
@@ -664,8 +664,8 @@ footer {
 .service-solutions {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 30px;
-    margin-top: 50px;
+    gap: 50px;
+    margin-top: 60px;
 }
 
 .solution-card {
@@ -852,7 +852,7 @@ footer {
 }
 /* ==================== AUDIT FORM SECTION ==================== */
 .audit-form-section {
-    padding: 80px 20px;
+    padding: 100px 20px;
     background-color: #f8f9fb;
     text-align: center;
 }
