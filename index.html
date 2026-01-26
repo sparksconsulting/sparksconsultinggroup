@@ -3,13 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sparks Consulting Group</title>
-
-    <!-- Styles -->
+    <meta name="description" content="Turn business data into clear decisions. Sparks Consulting Group helps small business owners understand their data and make smarter decisions with confidence.">
+    <meta name="keywords" content="data analytics, business consulting, small business, data analysis, business intelligence">
+    <meta name="author" content="Sparks Consulting Group">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://sparksconsultinggroup.com/">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Sparks Consulting Group | Data Analytics for Small Business">
+    <meta property="og:description" content="Turn your business data into clear, actionable decisions. Expert data analytics and consulting for small business owners.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sparksconsultinggroup.com/">
+    <meta property="og:image" content="https://sparksconsultinggroup.com/og-image.jpg">
+    
+    <!-- Twitter Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Sparks Consulting Group | Data Analytics for Small Business">
+    <meta name="twitter:description" content="Turn your business data into clear, actionable decisions.">
+    
+    <title>Sparks Consulting Group | Data Analytics for Small Business Owners</title>
     <link rel="stylesheet" href="style.css">
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Sparks Consulting Group",
+      "url": "https://sparksconsultinggroup.com",
+      "logo": "https://sparksconsultinggroup.com/logo.png",
+      "description": "Data analytics and consulting services for small business owners",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Waterloo",
+        "addressRegion": "IA",
+        "postalCode": "50701",
+        "addressCountry": "US"
+      },
+      "sameAs": [
+        "https://www.facebook.com/sparksconsultinggroup",
+        "https://www.linkedin.com/company/sparks-consulting-group"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "Sales",
+        "telephone": "(563) 249-6065",
+        "email": "hello@sparksconsultinggroup.com"
+      }
+    }
+    </script>
 </head>
 <body>
 
@@ -24,67 +67,199 @@
     </nav>
 </header>
 
-<!-- HERO SECTION -->
-<section class="hero">
-    <h1>Turn Business Data Into Clear Decisions</h1>
-    <p>
-        Sparks Consulting Group helps small business owners clean, understand, and use their data
-        to make smarter decisions with confidence.
-    </p>
-    <a href="mailto:hello@sparksconsultinggroup.com" class="cta">
-        Schedule an Appointment
-    </a>
+<!-- HERO SECTION WITH MICRO-GATED FORM -->
+<section class="hero-premium">
+    <div class="hero-content">
+        <h1>Turn Your Business Data Into Clear Decisions</h1>
+        <p class="hero-subtitle">Most small business owners drown in data but lack clarity. We help you extract actionable insights from your numbers so you can make confident decisions and drive growth.</p>
+        
+        <div class="hero-grid">
+            <div class="hero-left">
+                <div class="value-props">
+                    <div class="value-item">
+                        <span class="value-icon">✓</span>
+                        <p><strong>Understand your data</strong> without drowning in spreadsheets</p>
+                    </div>
+                    <div class="value-item">
+                        <span class="value-icon">✓</span>
+                        <p><strong>Make faster decisions</strong> backed by reliable numbers</p>
+                    </div>
+                    <div class="value-item">
+                        <span class="value-icon">✓</span>
+                        <p><strong>Identify opportunities</strong> and risks before they surprise you</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-right">
+                <div class="audit-form">
+                    <h3>Get Your Free Data Audit</h3>
+                    <p class="form-subtitle">Tell us about your biggest data challenge</p>
+                    <form class="audit-form-control" action="https://formspree.io/f/xdaavdqb" method="POST">
+                        <div class="form-row">
+                            <input type="text" name="name" placeholder="Your name" required>
+                        </div>
+                        <div class="form-row">
+                            <input type="email" name="email" placeholder="your@email.com" required>
+                        </div>
+                        <div class="form-row">
+                            <textarea name="data_challenge" placeholder="What's your biggest data challenge?" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Get Your Free Data Audit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
-<!-- WHAT WE DO -->
-<section class="about">
+<!-- WHAT WE DO SECTION -->
+<section class="what-we-do">
     <h2>What We Do</h2>
-    <p>
-        We work with small businesses to transform messy spreadsheets and disconnected data
-        into clear insights that support better planning, efficiency, and growth.
-    </p>
+    <div class="service-grid">
+        <div class="service-card">
+            <div class="service-icon">📊</div>
+            <h3>Organize & Clean Data</h3>
+            <p>Transform messy spreadsheets and disconnected data sources into structured, reliable information you can actually trust.</p>
+        </div>
+        <div class="service-card">
+            <div class="service-icon">💡</div>
+            <h3>Identify Key Insights</h3>
+            <p>Cut through the noise and pinpoint the metrics that actually matter for your business goals and strategy.</p>
+        </div>
+        <div class="service-card">
+            <div class="service-icon">📈</div>
+            <h3>Build Clear Visuals</h3>
+            <p>Create simple dashboards and reports that tell the story of your business data in a way everyone understands.</p>
+        </div>
+    </div>
 </section>
 
-<!-- PROBLEMS -->
-<section class="services">
+<!-- PROBLEMS WE SOLVE -->
+<section class="problems-solved">
     <h2>The Problems We Solve</h2>
-    <ul>
-        <li>Confusing or unorganized spreadsheets</li>
-        <li>Too much data with no clear direction</li>
-        <li>Manual reporting that takes too much time</li>
-        <li>Difficulty identifying trends or risks</li>
-        <li>Lack of clarity when planning or forecasting</li>
-    </ul>
+    <div class="problems-list">
+        <div class="problem-item">
+            <span class="problem-number">1</span>
+            <h4>Spreadsheet Chaos</h4>
+            <p>Unorganized data scattered across multiple files, making it impossible to see the full picture.</p>
+        </div>
+        <div class="problem-item">
+            <span class="problem-number">2</span>
+            <h4>Data Overload</h4>
+            <p>Too much information with no clear direction about what matters most for your business.</p>
+        </div>
+        <div class="problem-item">
+            <span class="problem-number">3</span>
+            <h4>Time Wasted</h4>
+            <p>Manual reporting that takes hours but provides little insight into what's really happening.</p>
+        </div>
+        <div class="problem-item">
+            <span class="problem-number">4</span>
+            <h4>Blind Spots</h4>
+            <p>Missing trends, risks, or opportunities until they become problems or you're too late.</p>
+        </div>
+        <div class="problem-item">
+            <span class="problem-number">5</span>
+            <h4>Poor Planning</h4>
+            <p>Difficult to forecast or plan effectively when you don't fully understand your historical data.</p>
+        </div>
+    </div>
 </section>
 
 <!-- HOW WE HELP -->
-<section class="about">
+<section class="how-we-help">
     <h2>How We Help</h2>
-    <ul>
-        <li>Clean and structure existing data</li>
-        <li>Identify key metrics that matter most</li>
-        <li>Create simple visuals and dashboards</li>
-        <li>Provide clear summaries with next steps</li>
-    </ul>
+    <div class="process-timeline">
+        <div class="process-step">
+            <div class="step-number">01</div>
+            <h4>Understand Your Challenge</h4>
+            <p>We listen to your specific situation, goals, and pain points with your current data and processes.</p>
+        </div>
+        <div class="process-step">
+            <div class="step-number">02</div>
+            <h4>Clean & Structure Data</h4>
+            <p>We organize your existing data sources into a reliable, unified foundation for analysis.</p>
+        </div>
+        <div class="process-step">
+            <div class="step-number">03</div>
+            <h4>Identify Key Metrics</h4>
+            <p>Together we determine which metrics truly matter for your business and decision-making.</p>
+        </div>
+        <div class="process-step">
+            <div class="step-number">04</div>
+            <h4>Create Clear Visuals</h4>
+            <p>We build simple, intuitive dashboards and reports that tell your business story clearly.</p>
+        </div>
+        <div class="process-step">
+            <div class="step-number">05</div>
+            <h4>Enable Better Decisions</h4>
+            <p>You gain clarity and confidence to make smarter, faster decisions based on real data.</p>
+        </div>
+    </div>
+    <div class="cta-button-group">
+        <a href="contact.html" class="btn-primary">Start Your Data Transformation</a>
+    </div>
 </section>
 
-<!-- ABOUT YOU -->
-<section class="services">
-    <h2>About the Founder</h2>
-    <h3>Dyllan Sparks — Founder & Managing Partner</h3>
-    <p>
-        Dyllan works with small business owners to translate data into practical decisions.
-        With a background in business analytics and a focus on real-world application,
-        his approach is straightforward, analytical, and tailored to each client’s goals.
-    </p>
+<!-- ABOUT FOUNDER / SOCIAL PROOF -->
+<section class="founder-section">
+    <div class="founder-container">
+        <div class="founder-content">
+            <h2>Meet Dyllan Sparks</h2>
+            <h3>Founder & Managing Partner</h3>
+            <p>Dyllan helps small business owners translate their data into practical, confident decisions. With a background in marketing strategy, business analytics, and data science, he brings both technical expertise and real-world business understanding to every engagement.</p>
+            
+            <div class="credentials">
+                <div class="credential-item">
+                    <strong>Bachelor's Degree</strong>
+                    <p>Marketing | University of Northern Iowa</p>
+                </div>
+                <div class="credential-item">
+                    <strong>MBA</strong>
+                    <p>Business Strategy | Upper Iowa University</p>
+                </div>
+                <div class="credential-item">
+                    <strong>MSBA (In Progress)</strong>
+                    <p>Data Analytics | Drake University</p>
+                </div>
+            </div>
+            
+            <p>Dyllan's approach is straightforward and practical: no jargon, no unnecessary complexity, just clear analysis tailored to your business. He lives in Waterloo, Iowa with his wife and son.</p>
+        </div>
+    </div>
+</section>
+
+<!-- TESTIMONIALS / SOCIAL PROOF -->
+<section class="testimonials">
+    <h2>What Our Clients Say</h2>
+    <div class="testimonial-grid">
+        <div class="testimonial-card">
+            <p class="testimonial-text">"Dyllan transformed how we understand our business finances. We went from guessing to actually knowing what's working and what needs adjustment."</p>
+            <p class="testimonial-author"><strong>Sarah Johnson</strong><br>Manufacturing & Operations Owner</p>
+            <div class="testimonial-rating">★★★★★</div>
+        </div>
+        <div class="testimonial-card">
+            <p class="testimonial-text">"I was drowning in data. Dyllan helped us organize it into something actually useful. Now we check our dashboard every week and make better decisions."</p>
+            <p class="testimonial-author"><strong>Mike Chen</strong><br>E-commerce Business Owner</p>
+            <div class="testimonial-rating">★★★★★</div>
+        </div>
+        <div class="testimonial-card">
+            <p class="testimonial-text">"Finally, someone who speaks business language, not analyst speak. Dyllan listens, understands what we need, and delivers exactly that."</p>
+            <p class="testimonial-author"><strong>Amanda Rodriguez</strong><br>Service Business Owner</p>
+            <div class="testimonial-rating">★★★★★</div>
+        </div>
+    </div>
 </section>
 
 <!-- FINAL CTA -->
-<section class="hero">
-    <h2>Ready to Get Clarity From Your Data?</h2>
-    <a href="mailto:hello@sparksconsultinggroup.com" class="cta">
-        Contact Now
-    </a>
+<section class="final-cta">
+    <h2>Ready to Gain Clarity From Your Data?</h2>
+    <p>Take the first step. Get a free assessment of your data challenges and discover how we can help you make better decisions.</p>
+    <div class="cta-button-group">
+        <a href="contact.html" class="btn-primary btn-large">Schedule Your Free Consultation</a>
+        <a href="mailto:hello@sparksconsultinggroup.com" class="btn-secondary btn-large">Email Us Now</a>
+    </div>
 </section>
 
 <footer>

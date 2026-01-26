@@ -3,9 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | Sparks Consulting Group</title>
+    <meta name="description" content="Contact Sparks Consulting Group. Get in touch with Dyllan Sparks for data consulting and analytics services in Waterloo, Iowa.">
+    <meta name="keywords" content="contact us, consulting services, data analytics, get in touch">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://sparksconsultinggroup.com/contact">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Contact | Sparks Consulting Group">
+    <meta property="og:description" content="Contact Sparks Consulting Group for data analytics and business consulting services.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sparksconsultinggroup.com/contact">
+    
+    <title>Contact | Sparks Consulting Group - Get in Touch</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ContactPage",
+      "mainEntity": {
+        "@type": "Organization",
+        "name": "Sparks Consulting Group",
+        "telephone": "(563) 249-6065",
+        "email": "hello@sparksconsultinggroup.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Waterloo",
+          "addressRegion": "IA",
+          "postalCode": "50701",
+          "addressCountry": "US"
+        }
+      }
+    }
+    </script>
 </head>
 <body>
 
@@ -20,54 +52,76 @@
     </nav>
 </header>
 
-<section class="hero">
-    <h1>Get in Touch</h1>
-    <p>We're happy to answer questions, discuss your needs, or start a conversation about how data can help your business.</p>
+<!-- HERO SECTION -->
+<section class="hero-premium">
+    <div class="hero-content">
+        <h1>Get in Touch</h1>
+        <p class="hero-subtitle">We're happy to answer questions, discuss your needs, or explore how we can help you gain clarity from your data.</p>
+    </div>
 </section>
 
-<section class="contact-info">
+<!-- CONTACT INFORMATION -->
+<section class="what-we-do">
     <h2>Contact Information</h2>
-    <div class="contact-details">
-        <div class="contact-item">
-            <p><strong>Phone</strong><br>(563) 249-6065</p>
+    <div class="contact-info-cards">
+        <div class="contact-card">
+            <h3>📧 Email</h3>
+            <p><a href="mailto:hello@sparksconsultinggroup.com">hello@sparksconsultinggroup.com</a></p>
+            <p class="small-text">Best for detailed inquiries</p>
         </div>
-        <div class="contact-item">
-            <p><strong>Email</strong><br><a href="mailto:hello@sparksconsultinggroup.com">hello@sparksconsultinggroup.com</a></p>
+        <div class="contact-card">
+            <h3>📞 Phone</h3>
+            <p><a href="tel:+15632496065">(563) 249-6065</a></p>
+            <p class="small-text">For quick questions</p>
         </div>
     </div>
 </section>
 
+<!-- CONTACT FORM -->
 <section class="contact-form-section">
     <h2>Send Us a Message</h2>
+    <p style="text-align: center; color: #666; margin-bottom: 40px;">Fill out the form below and we'll get back to you within 24 hours.</p>
+    
     <form class="contact-form" action="https://formspree.io/f/xdaavdqb" method="POST">
-        <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Your name" required>
+        <div class="form-row-contact">
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="John Smith" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="you@company.com" required>
+            </div>
         </div>
-        <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="your@email.com" required>
-        </div>
+        
         <div class="form-group">
             <label for="subject">Subject</label>
             <input type="text" id="subject" name="subject" placeholder="What is this about?" required>
         </div>
+        
         <div class="form-group">
             <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" placeholder="Tell us more about your inquiry..."></textarea>
+            <textarea id="message" name="message" rows="6" placeholder="Tell us about your data challenges and what you're looking to achieve..."></textarea>
         </div>
-        <button type="submit" class="submit-btn">Send Message</button>
+        
+        <button type="submit" class="btn-primary" style="width: 100%; margin-top: 10px;">Send Message</button>
     </form>
 </section>
 
-<section class="cta-section">
-    <p>We look forward to helping your business turn data into actionable insights.</p>
-    <a href="mailto:hello@sparksconsultinggroup.com" class="cta">Schedule a Call</a>
+<!-- FINAL CTA -->
+<section class="final-cta">
+    <h2>Let's Get Started</h2>
+    <p>Whether you have a specific project in mind or just want to explore how we can help, we'd love to hear from you.</p>
+    <div class="cta-button-group">
+        <a href="index.html#audit-form" class="btn-primary btn-large">Get Your Free Data Audit</a>
+    </div>
 </section>
 
 <footer>
-    <p>&copy; 2026 Sparks Consulting Group<br>
-    (563) 249-6065 · hello@sparksconsultinggroup.com</p>
+    <p>
+        © 2026 Sparks Consulting Group<br>
+        (563) 249-6065 · hello@sparksconsultinggroup.com
+    </p>
 </footer>
 
 </body>
