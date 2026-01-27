@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contact Sparks Consulting Group. Get in touch with Dyllan Sparks for data consulting and analytics services in Waterloo, Iowa.">
-    <meta name="keywords" content="contact us, consulting services, data analytics, get in touch">
+    <meta name="description" content="Contact Sparks Consulting Group in Waterloo, Iowa for small business data analytics help and consulting. Reach out for your free data audit today.">
+    <meta name="keywords" content="contact sparks consulting, waterloo iowa data analytics, cedar falls iowa consulting, small business analytics contact, data consulting waterloo">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://sparksconsultinggroup.com/contact">
     
     <!-- Open Graph Tags -->
-    <meta property="og:title" content="Contact | Sparks Consulting Group">
-    <meta property="og:description" content="Contact Sparks Consulting Group for data analytics and business consulting services.">
+    <meta property="og:title" content="Contact Data Analytics Consultant - Waterloo Iowa">
+    <meta property="og:description" content="Get in touch with Sparks Consulting Group for data analytics and small business consulting services in Waterloo & Cedar Falls, Iowa.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://sparksconsultinggroup.com/contact">
     
-    <title>Contact | Sparks Consulting Group - Get in Touch</title>
+    <title>Contact Data Analytics Consultant - Waterloo Iowa | Sparks Consulting Group</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     
@@ -38,6 +38,15 @@
       }
     }
     </script>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZZL5M29GN1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-ZZL5M29GN1');
+    </script>
 </head>
 <body>
 
@@ -56,7 +65,7 @@
 <!-- HERO SECTION -->
 <section class="hero-premium">
     <div class="hero-content">
-        <h1>Get in Touch</h1>
+        <h1>Contact Our Data Analytics Experts in Waterloo, Iowa</h1>
         <p class="hero-subtitle">We're happy to answer questions, discuss your needs, or explore how we can help you gain clarity from your data.</p>
     </div>
 </section>
@@ -83,7 +92,7 @@
     <h2>Send Us a Message</h2>
     <p style="text-align: center; color: #666; margin-bottom: 40px;">Fill out the form below and we'll get back to you within 24 hours.</p>
     
-    <form class="contact-form" action="https://formspree.io/f/xdaavdqb" method="POST">
+    <form class="contact-form" action="https://formspree.io/f/mzdrwzgd" method="POST">
         <div class="form-row-contact">
             <div class="form-group">
                 <label for="name">Your Name</label>
@@ -111,10 +120,10 @@
 
 <!-- FINAL CTA -->
 <section class="final-cta">
-    <h2>Let's Get Started</h2>
-    <p>Whether you have a specific project in mind or just want to explore how we can help, we'd love to hear from you.</p>
+    <h2>Or Book a Consultation Directly</h2>
+    <p>Prefer to talk first? Schedule a free 30-minute consultation with our data expert.</p>
     <div class="cta-button-group">
-        <a href="index.html#audit-form" class="btn-primary btn-large">Get Your Free Data Audit</a>
+        <a href="https://outlook.office.com/book/SparksConsultingGroup1@sparksconsultinggroup.com/s/GvJEb_Pv7kWAW0Gu-fB-uA2?ismsaljsauthenabled" class="btn-primary btn-large">Schedule Your Free Consultation</a>
     </div>
 </section>
 
@@ -130,7 +139,7 @@
             <ul>
                 <li><a href="services.html">Our Services</a></li>
                 <li><a href="services.html#how-we-help">How We Help</a></li>
-                <li><a href="contact.html">Schedule Consultation</a></li>
+                <li><a href="https://outlook.office.com/book/SparksConsultingGroup1@sparksconsultinggroup.com/s/GvJEb_Pv7kWAW0Gu-fB-uA2?ismsaljsauthenabled">Schedule Consultation</a></li>
             </ul>
         </div>
         <div class="footer-section">
@@ -154,6 +163,50 @@
         <p>&copy; 2026 Sparks Consulting Group. All rights reserved.</p>
     </div>
 </footer>
+
+<!-- STICKY CTA BUTTON -->
+<div class="sticky-cta">
+    <a href="https://outlook.office.com/book/SparksConsultingGroup1@sparksconsultinggroup.com/s/GvJEb_Pv7kWAW0Gu-fB-uA2?ismsaljsauthenabled">Schedule Consultation</a>
+</div>
+
+<!-- EXIT INTENT MODAL -->
+<div id="exitIntentModal" class="modal">
+    <div class="modal-content" style="max-width: 450px;">
+        <span class="modal-close">&times;</span>
+        <h3 style="color: #1a1a1a; margin-bottom: 10px; font-family: 'Montserrat', sans-serif; font-weight: 700;">Wait, Before You Go!</h3>
+        <p style="color: #666; margin-bottom: 20px; font-size: 14px;"><strong>Get a free 30-minute strategy consultation</strong> with our data expert. We'll identify your biggest data opportunity and create an action plan.</p>
+        <a href="https://outlook.office.com/book/SparksConsultingGroup1@sparksconsultinggroup.com/s/GvJEb_Pv7kWAW0Gu-fB-uA2?ismsaljsauthenabled" class="modal-button" style="text-align: center; display: block; text-decoration: none; color: white;">Schedule Free Consultation</a>
+        <p style="color: #999; margin-top: 15px; font-size: 12px; text-align: center;">No credit card required. Takes just 30 minutes.</p>
+    </div>
+</div>
+
+<script>
+    const exitIntentModal = document.getElementById('exitIntentModal');
+    const exitModalClose = document.querySelector('#exitIntentModal .modal-close');
+    let exitIntentShown = localStorage.getItem('exitIntentShown');
+    let exitIntentTriggered = false;
+    
+    // Detect mouse leaving page
+    document.addEventListener('mouseleave', () => {
+        if (!exitIntentShown && !exitIntentTriggered) {
+            exitIntentModal.classList.add('show');
+            exitIntentTriggered = true;
+            localStorage.setItem('exitIntentShown', 'true');
+        }
+    });
+    
+    // Close modal
+    exitModalClose.addEventListener('click', () => {
+        exitIntentModal.classList.remove('show');
+    });
+    
+    // Close when clicking outside
+    exitIntentModal.addEventListener('click', (e) => {
+        if (e.target === exitIntentModal) {
+            exitIntentModal.classList.remove('show');
+        }
+    });
+</script>
 
 </body>
 </html>
